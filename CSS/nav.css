@@ -1,0 +1,117 @@
+:root{
+    --main-bg-color: rgb(0, 0, 0);
+}
+
+.main-header{
+    width: 100%;
+    height: 15%;
+    background:var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+}
+.container-nav{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    font-family: "Arial";
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    margin: 25px 25px;
+    padding: 5px 5px;
+    font-weight: 150;
+    background: none;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.icon-bars{
+    display: block;
+    margin: -60px 90%;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 1.9em;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 10000;
+}
+.menu{
+    position: absolute;
+    z-index: 10000;
+    top: 99px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.568);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+  .menu__link{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+  .menu__link:hover{
+    border-radius: 0;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+  .menu__link--select{
+    border-radius: 0px;
+    background: rgb(77, 22, 141);
+    color: #fff;
+}
+
+.mostrar{
+    height: 205px;
+}
+
+@media screen and (min-width: 1024px){
+    .container--flex{
+        display: flex;
+        align-items: center;
+    }        
+    .icon-bars{
+        display: none;
+    }
+      
+    .menu{
+        background: rgba(0, 0, 0, 0);
+        display: flex;
+        height: auto;
+        width: auto;
+        text-align: right;
+    }
+    .menu__item{
+        text-align: left;
+        align-items: flex-end;
+        align-content: space-between;
+    }
+    .menu__link{
+    padding: 7px 13px;
+    text-align-last: right;
+    }    
+      
+}    
